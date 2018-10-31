@@ -1,0 +1,39 @@
+timestamp() {
+  date +"%T"
+}
+
+echo ""
+echo cleaning up git\'s cache
+git rm -r -f  -q --cached .
+echo cleanup OK
+echo ""
+echo adding /Assets
+git add Assets
+echo adding /Packages
+git add Packages
+echo adding /ProjectSettings
+git add ProjectSettings
+echo adding /UIElementsSchema
+git add UIElementsSchema
+echo adding *.csproj
+git add *.csproj
+echo adding *.sln
+git add *.sln
+echo adding .gitignore
+git add .gitignore
+echo adding ADD
+git add ADD
+echo success
+echo ""
+if [ "$1" != "" ];
+then 
+	echo commiting with -m \"$1\"
+	git commit -m "$1"
+	echo ""
+	echo Don\'t forget to push
+	echo ""
+else 
+	echo ""
+	echo Don\'t forget to commit and push
+	echo ""
+fi
