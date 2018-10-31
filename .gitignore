@@ -23,7 +23,10 @@ ExportedObj/
 *.svd
 *.pdb
 *.opendb
+<<<<<<< HEAD
 *.VC.db
+=======
+>>>>>>> 9ac9da857b2cc995322f99788a8ac9a9944c3a6a
 
 # Unity3D generated meta files
 *.pidb.meta
@@ -34,4 +37,8 @@ sysinfo.txt
 
 # Builds
 *.apk
+<<<<<<< HEAD
 *.unitypackage
+=======
+*.unitypackage
+>>>>>>> 9ac9da857b2cc995322f99788a8ac9a9944c3a6a
